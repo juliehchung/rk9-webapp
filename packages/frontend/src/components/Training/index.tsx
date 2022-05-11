@@ -3,6 +3,7 @@ import { Typography, Box, Grid, List, ListItem, ListItemText, Collapse } from '@
 import { ListItemButton } from '@mui/material';
 import { ExpandLess, ExpandMore } from '@material-ui/icons';
 import palette from '../../theme/palette';
+import heroImg from '../../assets/images/static/erns-58.jpg';
 
 export const Training: FC = () => {
   const [showPrivateSessions, setShowPrivateSessions] = useState(false);
@@ -25,9 +26,11 @@ export const Training: FC = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          backgroundImage: `url(${heroImg})`,
+          backgroundSize: '100%',
+          backgroundPosition: 'center',
         }}
       >
-        Temp Hero Image
       </Grid>
       <Grid
         item

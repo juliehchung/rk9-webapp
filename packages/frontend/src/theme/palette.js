@@ -22,6 +22,7 @@ const palette = {
   paper: {
     primary: white,
     secondary: '#7E0C6D',
+    secondaryTransparent: 'rgba(126, 12, 109, .30)',
     tertiary: '#e2daeb',
     quaternary: '#2D2B2B',
     highlight,

@@ -3,6 +3,11 @@ import { Grid } from '@material-ui/core';
 import { Typography } from '@mui/material';
 import { useHistory } from 'react-router-dom';
 import palette from '../../theme/palette';
+import heroImg from '../../assets/images/static/erns-20.jpg';
+import respectImg from '../../assets/images/static/four-women-dogs-smiley.jpg';
+import humanCanineImg from '../../assets/images/static/tilted-head-dogs.jpg';
+import workingDogImg from '../../assets/images/static/dog-musle-standing.jpg';
+import allieImg from '../../assets/images/static/allie-stormy-overlook.jpg';
 
 export const Home: FC = () => {
   const history = useHistory();
@@ -14,16 +19,17 @@ export const Home: FC = () => {
         md={12}
         style={{
           marginTop: '70px',
-          height: '100vh',
+          height: '85vh',
           width: '100%',
           backgroundColor: palette.disabled,
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          backgroundImage: `url(${heroImg})`,
+          backgroundSize: '150%',
+          backgroundPosition: 'center',
         }}
-      >
-        Temp Hero Image
-      </Grid>
+      />
       <Grid
         item
         md={12}
@@ -46,10 +52,11 @@ export const Home: FC = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            backgroundImage: `url(${respectImg})`,
+            backgroundSize: '100%',
+            backgroundPosition: 'center',
           }}
-        >
-          Temp Image
-        </Grid>
+        />
         <Grid
           item
           sm={12}
@@ -108,10 +115,11 @@ export const Home: FC = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            backgroundImage: `url(${humanCanineImg})`,
+            backgroundSize: '100%',
+            backgroundPosition: 'bottom',
           }}
-        >
-          Temp Image
-        </Grid>
+        />
       </Grid>
       <Grid
         item
@@ -135,10 +143,12 @@ export const Home: FC = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            backgroundImage: `url(${workingDogImg})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: '100%',
+            backgroundPosition: 'center',
           }}
-        >
-          Temp Image
-        </Grid>
+        />
         <Grid
           item
           md={6}
@@ -192,7 +202,9 @@ export const Home: FC = () => {
           </Typography>
         </Grid>
         <Grid item sm={12} md={6} style={{ display: 'flex', justifyContent: 'center' }}>
-          <div style={{ backgroundColor: palette.disabled }}>Temp Image</div>
+          <div style={{ backgroundColor: palette.disabled }}>
+            <img src={allieImg} style={{ height: '100%' }} alt="" />
+          </div>
         </Grid>
       </Grid>
     </Grid>

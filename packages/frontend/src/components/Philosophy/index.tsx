@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Grid } from '@material-ui/core';
 import { Typography } from '@mui/material';
 import palette from '../../theme/palette';
+import heroImg from '../../assets/images/static/bed-practice.jpg';
 
 export const Philosophy: FC = () => {
   return (
@@ -17,9 +18,11 @@ export const Philosophy: FC = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          backgroundImage: `url(${heroImg})`,
+          backgroundSize: '100%',
+          backgroundPosition: 'center',
         }}
       >
-        Temp Hero Image
       </Grid>
       <Grid
         item

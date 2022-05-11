@@ -2,7 +2,8 @@ import React, { FC } from 'react';
 import { Grid } from '@material-ui/core';
 import { Typography } from '@mui/material';
 import palette from '../../theme/palette';
-import PawPrint from '../../assets/images/paw.png';
+import AllieImg from '../../assets/images/static/Allie.jpg';
+import FamilyImg from '../../assets/images/static/dog-walking-lake.jpg'
 
 export const About: FC = () => {
   return (
@@ -47,7 +48,7 @@ export const About: FC = () => {
           <div
             style={{
               backgroundColor: palette.disabled,
-              backgroundImage: `url(${PawPrint})`,
+              backgroundImage: `url(${AllieImg})`,
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               borderRadius: '250px',
@@ -90,13 +91,16 @@ export const About: FC = () => {
             achievable.
           </Typography>
         </Grid>
-        <Grid item sm={12} md={7} style={{ display: 'flex', justifyContent: 'center' }}>
+        <Grid item sm={12} md={7} style={{ display: 'flex', justifyContent: 'center', height: '100%' }}>
           <div
             style={{
-              backgroundColor: palette.disabled,
+              height: '100%',
+              width: '75%',
+              background: `linear-gradient(to top, ${palette.paper.secondaryTransparent}, ${palette.paper.secondaryTransparent}), url(${FamilyImg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'bottom'
             }}
           >
-            Temp Image
           </div>
         </Grid>
       </Grid>
@@ -115,7 +119,7 @@ export const About: FC = () => {
         style={{
           display: 'flex',
           justifyContent: 'center',
-          alignItems: 'center',
+          alignItems: 'bottom',
         }}
       >
         <Grid
